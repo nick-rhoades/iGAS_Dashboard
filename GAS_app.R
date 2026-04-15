@@ -12,7 +12,7 @@ library(ape)
 data <- read.csv("Example_GAS_Genomic_Data.csv")
 tree <- read.tree("GAS_tree.nwk")
 
-genotypic_features <- names(data)[!names(data) %in% c("Sample", "Planet", "Region", "Total_Bases", "N50", "Longest_Contig", "Contig_Num")]
+genotypic_features <- names(data)[!names(data) %in% c("Sample", "Total_Bases", "N50", "Longest_Contig", "Contig_Num")]
 
 ui <- dashboardPage(
   dashboardHeader(title = "iGAS Surveillance"),
